@@ -6,3 +6,6 @@ Executing git init creates a .git subdirectory in the current working directory,
 
 Your first instinct, when you start to do something new, should be git init. You’re starting to write a new paper, you’re writing a bit of code to do a computer simulation, you’re mucking around with some new data … anything: think git init.
 
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The primary function of the git add command is to push pending changes made in the working directory to the git staging area. Instead of commiting all of the changes I have made since the last commit, the staging area lets me group related changes into hihgly focused snapshots before ctually committing it ot hte project history. This means that I can make all kinds of edits to unrelated files, then go back and split them up into logical commits by adding related changes to the staging area and commit them piece by piece. 
