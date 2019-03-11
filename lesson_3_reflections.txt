@@ -5,3 +5,6 @@ q
 q
 cd ~
 $ ls -a
+When would you want to use a remote repository rather than keeping all your work local?
+
+I want to use a remote reposository when I want to share my work, and when I want to save my work safely in the cloud.
