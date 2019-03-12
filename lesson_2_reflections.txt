@@ -1,11 +1,10 @@
-What happens when you initialize a repository? Why do you need to do it?
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
-The git init command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository. Most other Git commands are not available outside of an initialized repository, so this is usually the first command you'll run in a new project.
+I can create experimental versions easisy and work, and multiple people can work on different branches and master at the same time.
 
-Executing git init creates a .git subdirectory in the current working directory, which contains all of the necessary Git metadata for the new repository. This metadata includes subdirectories for objects, refs, and template files. A HEAD file is also created which points to the currently checked out commit.
+How do the diagrams help you visualize the branch structure?
+Sometimes it gets confusing to have multiple branches growing at the same time. The diagrams help me visualize how the branches are related to one another and helps me keep track of where I would like to merge certain branches.
 
-Your first instinct, when you start to do something new, should be git init. You’re starting to write a new paper, you’re writing a bit of code to do a computer simulation, you’re mucking around with some new data … anything: think git init.
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+When Git automatically merges, it might not make logical sense for the content owners who understand subtle nuances, but if we need always merge manually, it creates a lot of overhead.
 
-How is the staging area different from the working directory and the repository? What value do you think it offers?
-
-The primary function of the git add command is to push pending changes made in the working directory to the git staging area. Instead of commiting all of the changes I have made since the last commit, the staging area lets me group related changes into hihgly focused snapshots before ctually committing it ot hte project history. This means that I can make all kinds of edits to unrelated files, then go back and split them up into logical commits by adding related changes to the staging area and commit them piece by piece. 

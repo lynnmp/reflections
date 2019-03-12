@@ -8,3 +8,29 @@ $ ls -a
 When would you want to use a remote repository rather than keeping all your work local?
 
 I want to use a remote reposository when I want to share my work, and when I want to save my work safely in the cloud.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+Because I want to have control over what changes I'd pull and where to pull them into.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+- Forks are copies of repositories on the GitHub side that allow me to freely experiment with changes without affecting the original profject. I can contribute back to the original project using the prull requests.
+
+- Clones are local copies on my computer that I can sync between both the locala nd the remote locations of the project. Unlike forks, I can't pull down changes from the original repository I cloned from, and if the project is owned by someone else, I can't contribute back to it unless I'm invited as a collaborator. Cloning is good when I need a way to quickly get my own copy of a repository where I may not contribute to the original project.
+
+The work flow is...
+
+1) First, fork a project repository on GitHub, and
+2) Clone it down to my local computer, then
+3) Add a Git remote to my clone that points to the original project repository on GitHub, so that I can push changes back up to the forked repository in my GitHub account using git commit (to add commits locally) and git push.
+
+- Branches are a way to create a separate line of changes, which is independent from the main line (often referred to as "master"). Branches allow multiple users to make changes to a repository at the same time, so when I collaborate with others on GitHub, I should create a branch.
+
+The basic flow on my local Git repository:
+
+1) Create and checkout a feature branch using git checkout -b new-feature
+2) Make changes to the files
+3) Commit my changes to the branch using git commit (Add the changes to the staging first by using git add new-feature)
+4) Push the changes to Git using git push <remote> <branch> (ie. git push origin new-feature)
+
+Source: https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
