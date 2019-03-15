@@ -1,10 +1,3 @@
-cd reflections
-ls -a
-
-q
-q
-cd ~
-$ ls -a
 When would you want to use a remote repository rather than keeping all your work local?
 
 I want to use a remote reposository when I want to share my work, and when I want to save my work safely in the cloud.
@@ -34,3 +27,22 @@ The basic flow on my local Git repository:
 4) Push the changes to Git using git push <remote> <branch> (ie. git push origin new-feature)
 
 Source: https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
+
+####################
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+I can go offline and compare the differences between my local master and origin/master. I don't need to merge the two right away.
+
+####################
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+I would collaborate via email, shared Google Drive and other data sharing resources. It would be harder to collaborate this way because it'd create more overhead on communnication about changes and updates. 
+
+
+####################
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+I want to make changes directly in the master branch when I have obvious simple changes that all the collaborators are expecting me to make right away. It's quick and creates no over head this way. Whereas, I want to make changes in a separate branch when I have more complicated changes or I'm making changes that others don't necessarily know about, which I'd like to notify via "pull request" for efficient communication. My collaborators will get notified about my chagnes when I tried to merge my branch with changes into the master branch.
